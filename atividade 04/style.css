@@ -1,0 +1,137 @@
+:root {
+  --margem: 10px;
+}
+
+body {
+  margin: 0px;
+  background-color: #eeeeee;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 16px;
+  color: #222222;
+}
+
+.pagina {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.topo {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 4px solid #b30000;
+}
+
+.topo h1 {
+  margin: 5px;
+  color: #b30000;
+}
+
+.topo p {
+  margin: 5px;
+  color: #666666;
+}
+
+/* menu com flexbox */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #222222;
+}
+
+.menu a:link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 18px;
+}
+
+.menu a:visited {
+  color: #ffffff;
+}
+
+.menu a:hover {
+  background-color: #b30000;
+}
+
+/* conteúdo com flexbox: coluna principal + lateral */
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.principal {
+  width: calc(70% - (var(--margem) * 2));
+  min-width: 320px;
+  margin: var(--margem);
+}
+
+.lateral {
+  width: calc(30% - (var(--margem) * 2));
+  min-width: 220px;
+  margin: var(--margem);
+  background-color: #f5f5f5;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.destaque img {
+  width: 100%;
+}
+
+.destaque h2 {
+  margin: 10px 0px 5px 0px;
+}
+
+/* cards com flexbox */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc((100% / 3) - (var(--margem) * 2));
+  min-width: 140px;
+  margin: var(--margem);
+  background-color: #eeeeee;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.lateral h3 {
+  color: #b30000;
+  border-bottom: 2px solid #b30000;
+}
+
+.item {
+  border-bottom: 1px solid #cccccc;
+}
+
+.item h4 {
+  margin: 10px 0px 5px 0px;
+}
+
+.item p {
+  margin: 0px 0px 10px 0px;
+  font-size: 14px;
+}
+
+.rodape {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}

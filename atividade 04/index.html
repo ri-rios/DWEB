@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ricardo">
+  <meta name="description" content="Site de notícias feito com flexbox e DIVs">
+  <title>Portal Notícias</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="pagina">
+
+    <!-- topo do site -->
+    <div class="topo">
+      <h1>Portal Notícias</h1>
+      <p>As principais notícias do dia</p>
+    </div>
+
+    <!-- menu -->
+    <div class="menu">
+      <a href="#">Início</a>
+      <a href="#">Cidade</a>
+      <a href="#">Esportes</a>
+      <a href="#">Tecnologia</a>
+      <a href="#">Economia</a>
+      <a href="#">Cultura</a>
+    </div>
+
+    <!-- conteúdo: coluna principal e coluna lateral -->
+    <div class="conteudo">
+
+      <div class="principal">
+
+        <!-- notícia em destaque -->
+        <div class="destaque">
+          <img src="imagens/destaque.jpg" alt="Foto da notícia em destaque">
+          <h2>Cidade inaugura novo parque com pista de caminhada e área de lazer</h2>
+          <p>O espaço tem mais de 20 mil metros quadrados e deve receber cerca de mil
+          visitantes por dia. A abertura ao público acontece neste fim de semana.</p>
+        </div>
+
+        <!-- três notícias menores -->
+        <div class="cards">
+          <div class="card">
+            <img src="imagens/noticia1.jpg" alt="Foto da notícia 1">
+            <h3>Time local vence e assume a liderança do campeonato</h3>
+            <p>A equipe fez 2 a 0 em casa e chegou aos 18 pontos.</p>
+          </div>
+
+          <div class="card">
+            <img src="imagens/noticia2.jpg" alt="Foto da notícia 2">
+            <h3>Novo aplicativo promete facilitar o transporte público</h3>
+            <p>Usuários poderão ver horários dos ônibus em tempo real.</p>
+          </div>
+
+          <div class="card">
+            <img src="imagens/noticia3.jpg" alt="Foto da notícia 3">
+            <h3>Feira de cultura reúne artistas de toda a região</h3>
+            <p>O evento tem entrada gratuita e segue até domingo.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="lateral">
+        <h3>Últimas notícias</h3>
+
+        <div class="item">
+          <h4>Previsão do tempo indica chuva para o fim de semana</h4>
+          <p>Temperatura deve cair até 8 graus.</p>
+        </div>
+
+        <div class="item">
+          <h4>Prefeitura abre inscrições para cursos gratuitos</h4>
+          <p>São 300 vagas em várias áreas.</p>
+        </div>
+
+        <div class="item">
+          <h4>Dólar fecha o dia em queda</h4>
+          <p>Mercado reage a novos dados da economia.</p>
+        </div>
+
+        <div class="item">
+          <h4>Estudantes criam robô para competição de tecnologia</h4>
+          <p>O projeto foi feito em seis meses.</p>
+        </div>
+
+        <h3>Mais lidas</h3>
+        <ol>
+          <li>Parque novo abre neste fim de semana</li>
+          <li>Time local lidera o campeonato</li>
+          <li>Cursos gratuitos têm inscrições abertas</li>
+        </ol>
+      </div>
+
+    </div>
+
+    <!-- rodapé -->
+    <div class="rodape">
+      <p>Portal Notícias - Site fictício feito para a disciplina de DWEB<br>
+      Fatec Sorocaba - Aluno: Ricardo</p>
+    </div>
+
+  </div>
+</body>
+</html>

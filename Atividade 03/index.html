@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ricardo">
+  <meta name="description" content="Pesquisa sobre Design Responsivo: conceitos, pilares, técnicas e exemplos">
+  <meta name="keywords" content="design responsivo, mobile first, flexbox, html, css">
+  <title>Design Responsivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Design Responsivo</h1>
+    <p>Pesquisa da disciplina de Desenvolvimento Web<br>
+    Fatec Sorocaba - Análise e Desenvolvimento de Sistemas<br>
+    Aluno: Ricardo</p>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="#introducao">Introdução</a></li>
+      <li><a href="#conceitos">Conceitos</a></li>
+      <li><a href="#pilares">Pilares</a></li>
+      <li><a href="#tecnicas">Técnicas</a></li>
+      <li><a href="#exemplos">Exemplos</a></li>
+      <li><a href="#conclusao">Conclusão</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="introducao">
+      <h2>Introdução</h2>
+      <p>Hoje as pessoas acessam sites por celular, tablet, notebook e até pela TV.
+      Cada aparelho tem um tamanho de tela diferente, e um site feito só para o computador
+      fica ruim no celular, com <strong>letras pequenas</strong> e itens saindo da tela.
+      O <em>design responsivo</em> existe para resolver esse problema.</p>
+
+      <p>Segundo os dados citados nos slides da disciplina, o Brasil tem cerca de 270 milhões
+      de linhas móveis ativas, e no mundo são mais de 8 bilhões de conexões móveis.
+      Por isso o site precisa funcionar bem em qualquer tela.</p>
+
+      <figure>
+        <img src="imagens/dispositivos.jpg" alt="Um site aberto em celular, tablet e notebook"
+        title="Um mesmo site em vários dispositivos" width="600">
+        <figcaption>Um mesmo site em diferentes dispositivos</figcaption>
+      </figure>
+    </section>
+
+    <section id="conceitos">
+      <h2>Conceitos</h2>
+
+      <article>
+        <h3>O que é responsividade</h3>
+        <p>Responsividade é a capacidade de um site ou aplicativo se adaptar a diferentes
+        dispositivos e tamanhos de tela, ajustando o layout e o conteúdo de forma automática.</p>
+      </article>
+
+      <article>
+        <h3>Responsive Web Design</h3>
+        <p>O termo foi criado por Ethan Marcotte em 2010. Ele é uma solução técnica para
+        programar o site de forma que os elementos se adaptem sozinhos à largura da tela.</p>
+      </article>
+
+      <article>
+        <h3>Mobile First</h3>
+        <p>Conceito apresentado por Luke Wroblewski. A ideia é planejar o projeto primeiro
+        para o celular e só depois para o computador, porque a tela pequena obriga a focar
+        no que é mais importante.</p>
+      </article>
+    </section>
+
+    <section id="pilares">
+      <h2>Os três pilares</h2>
+      <p>Os pilares definidos por Marcotte são princípios, e não ferramentas:</p>
+
+      <dl>
+        <dt>Layouts fluidos</dt>
+        <dd>Usar unidades relativas, como porcentagem e em, no lugar de tamanhos fixos.</dd>
+        <dt>Imagens e recursos flexíveis</dt>
+        <dd>As imagens podem ser redimensionadas proporcionalmente com CSS.</dd>
+        <dt>Media queries</dt>
+        <dd>Regras de CSS que mudam o estilo de acordo com a largura da tela.</dd>
+      </dl>
+    </section>
+
+    <section id="tecnicas">
+      <h2>Técnicas</h2>
+      <p>Algumas técnicas usadas para deixar uma página responsiva:</p>
+
+      <ul>
+        <li>Unidades relativas (porcentagem e em)</li>
+        <li>Flexbox e Grid</li>
+        <li>Imagens flexíveis, com o atributo srcset</li>
+        <li>HTML semântico (header, nav, main, section, article, aside e footer)</li>
+        <li>Media queries</li>
+      </ul>
+
+      <p>O atributo <mark>alt</mark> da imagem também é importante, porque os leitores de
+      tela usam esse texto.</p>
+
+            <figure>
+        <img src="imagens/desktop.png" alt="O site no computador"
+        title="Site no computador" width="600">
+        <figcaption>O site no computador</figcaption>
+      </figure>
+
+      <figure>
+        <img src="imagens/celular.jpeg" alt="O site no celular"
+        title="Site no celular" width="300">
+        <figcaption>O site no celular</figcaption>
+      </figure>
+
+      <aside>
+        <h3>Para saber mais</h3>
+        <p>Veja como é o site da <a href="http://www.fatecsorocaba.edu.br" title="Site da Fatec Sorocaba"
+        target="_blank" rel="noopener noreferrer">Fatec Sorocaba</a> em telas diferentes.</p>
+      </aside>
+    </section>
+
+    <section id="exemplos">
+      <h2>Exemplos</h2>
+      <p>Os PWAs (Progressive Web Apps) são sites que se comportam como aplicativos, e um dos
+      critérios para ser um PWA é ser responsivo. Alguns exemplos:</p>
+
+      <ol>
+        <li>Amazon</li>
+        <li>Mercado Livre</li>
+        <li>Uber</li>
+        <li>Pinterest</li>
+        <li>Google Drive</li>
+        <li>Trello</li>
+      </ol>
+
+      <blockquote>
+        Um produto responsivo é projetado de forma a oferecer uma experiência de usuário
+        otimizada em desktops, tablets, smartphones e outros dispositivos.
+      </blockquote>
+    </section>
+
+    <section id="conclusao">
+      <h2>Conclusão</h2>
+      <p>O design responsivo é necessário porque as pessoas acessam a web por aparelhos muito
+      diferentes. Ele se apoia em três pilares (layouts fluidos, imagens flexíveis e media queries)
+      e usa ferramentas como Flexbox, Grid e HTML semântico.</p>
+      <p>A ideia de Mobile First ajuda a planejar o site começando pelo celular. Conhecer esses
+      conceitos é importante para quem quer trabalhar com desenvolvimento web.</p>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Referências</h3>
+    <p>MARCOTTE, Ethan. Responsive Web Design. New York: A Book Apart, 2011.<br>
+    WROBLEWSKI, Luke. Mobile First. New York: A Book Apart, 2011.<br>
+    ZEMEL, Tárcio. Web Design Responsivo. São Paulo: Casa do Código, 2012.<br>
+    ROCKCONTENT. Progressive Web Apps. 2019.</p>
+    <p><small>Aluno: Ricardo - DWEB - Fatec Sorocaba</small></p>
+  </footer>
+</body>
+</html>

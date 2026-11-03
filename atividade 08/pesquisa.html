@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ricardo">
+  <title>Pesquisa do filme</title>
+  <link rel="stylesheet" href="Pesquisa.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pesquisa do filme</h1>
+    <p>Registre a resposta de cada pessoa que assistiu ao filme</p>
+  </header>
+
+  <main>
+    <p>Respostas registradas: <span id="contador">0</span> de 45</p>
+
+    <p>
+      <label>Idade:</label><br>
+      <input type="number" id="idade">
+    </p>
+
+    <p>
+      <label>Sexo:</label><br>
+      <select id="sexo">
+        <option value="">Selecione</option>
+        <option value="F">Feminino</option>
+        <option value="M">Masculino</option>
+        <option value="O">Outros</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Opinião sobre o filme:</label><br>
+      <select id="opiniao">
+        <option value="">Selecione</option>
+        <option value="4">Ótimo</option>
+        <option value="3">Bom</option>
+        <option value="2">Regular</option>
+        <option value="1">Péssimo</option>
+      </select>
+    </p>
+
+    <input type="button" value="Registrar resposta" onclick="registrar()">
+    <input type="button" value="Mostrar
